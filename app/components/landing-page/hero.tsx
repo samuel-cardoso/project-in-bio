@@ -1,6 +1,10 @@
+import UserCard from "../commons/user-card";
+import Button from "../ui/button";
+import TextInput from "../ui/text-input";
+
 export default function Hero() {
     return (
-        <div className="flex ">
+        <div className="flex h-screen">
             <div className="w-full flex flex-col gap-2 mt-[35vh]">
                 <h1 className="text-5xl font-bold text-white leading-[64px]">
                     Seus projetos e redes sociais em um único link
@@ -14,12 +18,13 @@ export default function Hero() {
                     <span className="text-white text-xl">
                         projectinbio.com
                     </span>
-                    <input type="text" />
-                    <button>Criar agora</button>
+                    <TextInput />
+                    <Button>Criar agora</Button>
                 </div>
             </div>
-            <div className="w-full flex items-center justify-center bg-[radio-gradient(circle_at_50%_50%,#4B2DBB, transparent_55%)]">
+            <div className="w-full flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,#4B2DBB,transparent_55%)]">
                 <div className="relative">
+                    <UserCard />
                     <div className="absolute -bottom[7%] -right[45%] ">
                     </div>
                     <div className="absolute top[20%] -left[45%] -x-10">
